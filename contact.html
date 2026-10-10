@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Ebenezar Uju</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 1024px)" href="css/tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="css/laptop.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-card">
+            <h1>Contact Me</h1>
+            <p>
+                Complete the form below to send a message.
+            </p>
+
+            <form action="#" method="post">
+                <label for="full-name">Name</label>
+                <input
+                    type="text"
+                    id="full-name"
+                    name="full-name"
+                    required
+                    minlength="2"
+                    maxlength="60">
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required>
+
+                <label for="phone">Phone</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    pattern="[0-9]{10}"
+                    placeholder="1234567890"
+                    title="Enter a 10-digit phone number">
+
+                <label for="comments">Comments</label>
+                <textarea
+                    id="comments"
+                    name="comments"
+                    rows="7"
+                    required
+                    minlength="10"
+                    maxlength="1000"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Contact:
+            <a href="mailto:ebenezar.uju@ontariotechu.net">ebenezar.uju@ontariotechu.net</a>
+        </p>
+        <p>&copy; 2026 Ebenezar Uju. All rights reserved.</p>
+    </footer>
+</body>
+</html>
